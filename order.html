@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order now</title>
+    <link rel="stylesheet" href="order.css">
+</head>
+<body>
+    <h2>Order Coffee</h2>
+  <form id="order-form" action="https://script.google.com/macros/s/AKfycbzkeajyiQh3-SgyOqZgHrcKx7ue6cjetS9SethjfrIn2zc6fFzZGzXf9EJ2k3fZ946H/exec" method="POST">
+  <input type="text" name="name" placeholder="Enter Your Name" required>
+  <input type="email" name="email" placeholder="Enter Your Email" required>
+ <select name="item" id="item" required>
+    <option value="" disabled selected hidden>Choose Coffee</option>
+    <optgroup label="☕ Hot Coffee">
+      <option value="Espresso">Espresso</option>
+      <option value="Cappuccino">Cappuccino</option>
+      <option value="Latte">Latte</option>
+      <option value="Americano">Americano</option>
+    </optgroup>
+
+    <optgroup label="🧊 Cold Coffee">
+      <option value="Iced Coffee">Iced Coffee</option>
+      <option value="Cold Brew">Cold Brew</option>
+      <option value="Iced Latte">Iced Latte</option>
+      <option value="Frappe">Frappe</option>
+    </optgroup>
+  </select>
+  <input type="number" name="qty" placeholder="Quantity"  id="qty" value="1" min="1"required>
+  <div id="total-amount">Total: NPR 0</div>
+  <textarea name="address" placeholder="Delivery Address" required></textarea>
+  <button type="submit">Order Now</button>
+</form>
+<p id="success-msg" style="display:none; color:green; font-weight:bold; text-align:center;">
+  Your order is successful! ☕
+</p>
+<script src="order.js"></script>
+</body>
+</html>

@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Landing Page</title>
+    <link rel="stylesheet"href="coff.css">
+    <!-- box icons -->
+    <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <!-- swiper css-->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+/>
+<body>
+       <!-- Navbar-->
+    <header>
+           <h2 class="logo-text">☕Coffee</h2>
+           <div class="main-menu">
+            <span class="menuBtn" onclick="openMenu()">&#9776;</span>
+            <span class="closeBtn" onclick="closeMenu()">&#9746;</span>
+        
+        <!-- Links-->
+    <ul class="navbar" id="nav-menu">
+        <li><a href="#home" class="nav-link">HOME</a></li>
+        <li><a href="#about" class="nav-link">ABOUT</a></li>
+        <li><a href="#menu" class="nav-link">MENU</a></li>
+        <li><a href="#customers" class="nav-link">customers</a></li> 
+        <li><a href="#products" class="nav-link">GALLERY</a></li> 
+        <li><a href="#contact" class="nav-link">CONTACT</a></li>
+        </ul>
+        </div>
+        <!--iCONS-->
+        <!-- <div class="header-icon">
+           <i class='bx  bx-cart'  ></i> 
+            <i class='bx  bx-search' id="search-icon"></i> 
+        </div> -->
+     </header>
+
+     <!-- Home -->
+     <section class="home" id="home">
+    <div class="home-text">
+        <h1> Start your day<br> with coffee</h1>
+        <p>Coffee is a popular beverage brewed from roasted and ground 
+        <br>coffee beans, known for its stimulating effect and caffeine content. </p>
+       <div class="home-buttons">
+       <button class="btn-order-now" onclick="OrderNow()">Order Now</button>
+      <a href="#contact"><button class="btn-contact-us">Contact us</button></a>
+    </div>
+    </div>
+<div class="home-img">
+    <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.coop.co.uk%2Fproducts%2Fstarbucks-chilled-cup-classics-latte-220ml&psig=AOvVaw2fH3WB0V-2c7R5YcHQFHqv&ust=1748155427494000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCNCD7urAu40DFQAAAAAdAAAAABAE" alt="">
+</div>
+</section>
+<!-- about -->
+<section class="about" id="about">
+    <div class="about-img">
+        <img src="../Images/coffeee.webp"alt="">
+    </div>
+    <div class="about-text">
+        <h2> Our history</h2>
+        <p>Coffee's history traces back to 9th-century Ethiopia, where a goat herder named Kaldi reportedly discovered its energizing effects.
+        From there, coffee cultivation and trade spread to the Arabian Peninsula in the 15th-16th centuries, and then to Europe and Asia in the 
+        17th century. By the 19th century, coffee had become a global commodity, and its popularity continues to this day, with countries like 
+        Brazil being major producers. </p>
+         <p>1. Origins in Ethiopia (9th Century)Legend of Kaldi: Coffee is said to have been discovered by an Ethiopian goat herder named Kaldi, 
+            who noticed his goats became energetic after eating red berries from a certain tree.
+            Early Use: Local monks used the berries to make a drink that helped them stay awake during long prayers. The use of coffee likely began 
+            as a chewed fruit or fermented drink before it was brewed</p>
+        <!-- <a href="#" id="toggleBtn" class="btn" onclick="toggleLearn(event)">Learn More</a> -->
+        <div id="extraContent" style="display:none; margin-top:50px;">
+  <p>
+ Coffee has a long and fascinating history that dates back to around the 9th century. 
+ It is believed that coffee was first discovered in Ethiopia, where, according to a popular legend, 
+ a goat herder noticed that his goats became unusually energetic after eating berries from a certain plant.
+  These berries were later used to prepare the first form of coffee. From Ethiopia, coffee spread to Yemen
+   in the 15th century, where it was first cultivated and used mainly by religious communities to stay awake 
+   during long prayers. Coffee gradually became popular across the Middle East, then spread to Europe in the 
+   17th century through trade, where coffee houses became important centers for social gatherings and discussions. 
+   Later, coffee cultivation expanded to different parts of the world, especially in tropical regions. Today, 
+   countries such as Brazil are the largest producers of coffee, followed by Vietnam, Colombia, and Indonesia. Coffee plants generally grow best in warm climates with high rainfall and are mainly produced in regions known as the “Coffee Belt,” which lies between the Tropic of Cancer and the Tropic of Capricorn.
+  </p>
+</div>
+       <a  id="toggleBtn" class="btn" onclick="toggleLearn(event)">Learn More</a> 
+    </div>
+</section>
+<!-- Menu section -->
+<section class="menu-section" id="menu">
+<h2 class="menu-title">Our Menu</h2>
+<div class="section-content">
+    <div class="menu-list">
+        <div class="menu-item">
+            <h3 class="name">Hot Coffee</h3>
+              <div class="sub-menu">
+                <div class="menu-item">
+                    <img src="../Images/Espresso.avif" alt="">
+                     <h4>Espresso</h4>
+                      <p>Rs.100</p>
+                </div>
+                <div class="menu-item">
+                    <img src="../Images/Cappuccino.avif" alt="">
+                     <h4>Cappuccino</h4>
+                      <p>Rs. 160</p>
+                </div>
+                <div class="menu-item">
+                    <img src="../Images/lattee.avif" alt="">
+                     <h4>Latte</h4>
+                      <p>Rs. 170</p>
+                </div>
+                <div class="menu-item">
+                    <img src="../Images/hazelnut coffee.avif" alt="">
+                     <h4>Mocha</h4>
+                      <p>Rs.210</p>
+                </div>
+                <div class="menu-item">
+                    <img src="../Images/amercino.avif" alt="">
+                     <h4>Americano</h4>
+                      <p>Rs.110</p>
+                </div>
+                 <div class="menu-item">
+                    <img src="../Images/machito.avif" alt="">
+                     <h4>Macchiato</h4>
+                      <p>Rs. 140</p>
+                </div>
+                 <div class="menu-item">
+                    <img src="../Images/flat white.avif" alt="">
+                     <h4>Flat White</h4>
+                      <p>Rs. 230</p>
+                </div>
+            </div>
+        </div>
+        <div class="menu-item">
+            <h3 class="name">Cold Coffee</h3>
+             <div class="sub-menu">
+                <div class="menu-item">
+                    <img src="../Images/ice coffee.avif" alt="">
+                     <h4>Iced Coffee</h4>
+                      <p>Rs. 160</p>
+                </div>
+                <div class="menu-item">
+                    <img src="../Images/frappee.avif" alt="">
+                     <h4> Vanilla Frappé</h4>
+                      <p>Rs. 220</p>
+                </div>
+                <div class="menu-item">
+                    <img src="../Images/cold brew.avif" alt="">
+                     <h4>Cold Brew</h4>
+                      <p>Rs. 150</p>
+                </div>
+                <div class="menu-item">
+                    <img src="../Images/iced americano.avif" alt="">
+                     <h4>Iced Americano</h4>
+                      <p>Rs. 250</p>
+                </div>
+                <div class="menu-item">
+                    <img src="../Images/chocolate cold coffee.avif" alt="">
+                     <h4>Chocolate Cold Coffee</h4>
+                      <p>Rs. 230</p>
+                </div>
+            </div>
+        </div>
+
+            <div class="menu-item">
+                <h3 class="name">Special Coffee</h3>
+                  <div class="sub-menu">
+                <div class="menu-item">
+                    <img src="../Images/caramel macchiato.avif" alt="">
+                     <h4>Caramel Macchiato</h4>
+                      <p>Rs.230</p>
+                </div>
+                <div class="menu-item">
+                    <img src="../Images/vanilla lattee.avif" alt="">
+                     <h4>Vanilla Latte</h4>
+                      <p>Rs. 270</p>
+                </div>
+                <div class="menu-item">
+                    <img src="../Images/hazelnut coffee.avif" alt="">
+                     <h4>Hazelnut Coffee</h4>
+                      <p>Rs.200</p>
+                </div>
+                <div class="menu-item">
+                    <img src="../Images/chocolate mocha.avif" alt="">
+                     <h4>Chocolate Mocha</h4>
+                      <p>Rs.220</p>
+                </div>
+                 <div class="menu-item">
+                    <img src="../Images/affogato.avif" alt="">
+                     <h4>Affogato</h4>
+                      <p>Rs. 250</p>
+                </div>
+               
+            </div>
+        </div>
+         <div class="menu-item">
+                <h3 class="name">Non-Coffee Drinks</h3>
+                  <div class="sub-menu">
+                <div class="menu-item">
+                    <img src="../Images/hot chocolate.avif" alt="">
+                     <h4>Hot Chocolate</h4>
+                      <p>Rs. 185</p>
+                </div>
+                <div class="menu-item">
+                    <img src="../Images/milkshake.avif" alt="">
+                     <h4>Milkshake</h4>
+                      <p>Rs. 120</p>
+                </div>
+                <div class="menu-item">
+                    <img src="../Images/lemon tea.avif" alt="">
+                     <h4>Lemon Tea</h4>
+                      <p>Rs. 35</p>
+                </div>
+                <div class="menu-item">
+                    <img src="../Images/green tea.avif" alt="">
+                     <h4>Green Tea</h4>
+                      <p>Rs.60</p>
+                </div>
+                <div class="menu-item">
+                    <img src="../Images/black tea.avif" alt="">
+                     <h4>Black Tea</h4>
+                      <p>Rs. 20</p>
+                </div>
+                 <div class="menu-item">
+                    <img src="../Images/juice.avif" alt="">
+                     <h4>Juice</h4>
+                      <p>Rs. 40</p>
+                </div>
+            </div>
+        </div>
+         <div class="menu-item">
+                <h3 class="name">Snacks/Food</h3>
+                  <div class="sub-menu">
+                <div class="menu-item">
+                    <img src="../Images/sandwich.avif" alt="">
+                     <h4>Sandwich</h4>
+                      <p>Rs. 90</p>
+                </div>
+                <div class="menu-item">
+                    <img src="../Images/burger.avif" alt="">
+                     <h4>Burger</h4>
+                      <p>Rs. 80</p>
+                </div>
+                <div class="menu-item">
+                    <img src="../Images/french fries.avif" alt="">
+                     <h4>French Fries</h4>
+                      <p>Rs. 150</p>
+                </div>
+                <div class="menu-item">
+                    <img src="../Images/cake.avif" alt="">
+                     <h4>Cake</h4>
+                      <p>Rs. 700</p>
+                </div>
+                <div class="menu-item">
+                    <img src="../Images/donut.avif" alt="">
+                     <h4>Donut</h4>
+                      <p>Rs. 110</p>
+                </div>
+                 <div class="menu-item">
+                    <img src="../Images/cokies.avif" alt="">
+                     <h4>Cookies</h4>
+                      <p>Rs. 140</p>
+                </div>
+            </div>
+        </div>
+
+</div>
+</section>
+<!-- Testimonials section  -->
+<section class="customers" id="customers">
+        <div class="heading">
+            <h2>Our customers</h2>
+        </div>
+        <!--Container-->
+        <div class="customers-container">
+            <div class="box">
+                <div class="stars">
+                    <i class='bx  bxs-star'></i> 
+                    <i class='bx  bxs-star'></i> 
+                    <i class='bx  bxs-star'></i> 
+                    <i class='bx  bxs-star'></i> 
+                    <i class='bx  bxs-star-half'></i> 
+                </div>
+                <p> Boosts Energy and Alertness
+Coffee contains caffeine, a natural stimulant that helps improve focus, alertness, and mental energy.</p>
+            <h2> coffee Store</h2>
+            <img src="../Images/ig1.avif" alt="">
+            </div>
+                   <div class="box">
+                <div class="stars">
+                    <i class='bx  bxs-star'></i> 
+                    <i class='bx  bxs-star'></i> 
+                    <i class='bx  bxs-star'></i> 
+                    <i class='bx  bxs-star'></i> 
+                    <i class='bx  bxs-star-half'></i> 
+                </div>
+                <p> Enhances Physical Performance
+Caffeine increases adrenaline levels, which can improve physical performance, making it a popular pre-workout drink</p>
+            <h2> coffee Store</h2>
+            <img src="../Images/ig 2.avif" alt="">
+            </div>
+                   <div class="box">
+                <div class="stars">
+                    <i class='bx  bxs-star'></i> 
+                    <i class='bx  bxs-star'></i> 
+                    <i class='bx  bxs-star'></i> 
+                    <i class='bx  bxs-star'></i> 
+                    <i class='bx  bxs-star-half'></i> 
+                </div>
+                <p>Improves Mood
+Moderate coffee consumption can stimulate the release of dopamine and serotonin—“feel-good” chemicals in the brain.</p>
+            <h2>coffee Store</h2>
+            <img src="../Images/ig3.webp" alt="">
+            </div>
+        </div>
+    </section>
+<!--Products-->
+<section class="products" id="products">
+    <div class="heading">
+        <h2> Our Gallery</h2>
+    </div>
+    <!--Container-->
+<div class="products-container">
+    <div class="box">
+        <img src="../Images/shop1.avif" alt="">
+        </div>
+
+      <div class="box">
+        <img src="../Images/shop2.avif" alt="">
+</div>
+  <div class="box">
+        <img src="../Images/shop3.avif" alt="">
+    </div>
+      <div class="box">
+        <img src="../Images/shop4.avif" alt="">  
+    </div>
+      <div class="box">
+        <img src="../Images/shop5.jpg" alt="">
+    </div>
+       <div class="box">
+        <img src="../Images/shop6.avif" alt="">
+
+        </div>
+    </div>
+    </section>
+    <!-- Contact section -->
+  <section class="contact-section" id="contact">
+      <h2 class="section-title">Contact Us</h2>
+      <div class="section-content">
+             <ul class="contact-info-list">
+                <li class="contact-info">
+               <p><i class="bx bxs-map"></i><a href="https://maps.google.com/?q=250+New+york+City,USA+10001">250 New york City,USA 10001</a></p>
+                </li>
+                 <li class="contact-info">
+                <p><i class="bx bxs-envelope"></i><a href="mailto:coffee@shop.com">coffee@shop.com</a></p>
+                </li>
+                 <li class="contact-info">
+               <p><i class="bx bxs-phone"></i><a href="tel:+977-9809876345">+977- 9809876345</a>
+              </p>
+                </li>
+                 <li class="contact-info">
+                <p><i class="bx bxs-time"></i>Mon-Sat: 7:00 AM - 10:00 PM</p>
+                </li>
+                 <li class="contact-info">
+                <p><i class="bx bxs-time"></i> Sunday:Closed</p>
+                </li>
+                 <li class="contact-info">
+                <p><i class='bx bx-globe'></i><a href="https://www.coffeeshop.com">www.coffeeshop.com</a></p>
+                </li>
+            </ul>
+    <form action="https://script.google.com/macros/s/AKfycbwiwgAVeSHhJvW1-K7cb2Zq85t9lY4PIcH1Jroj9TIvGmdhLz7yM1mQ5mbHbmNhvFgF/exec" method="POST" class="contact-form" id="contact-form">
+    <input type="text" name="name" class="form-input" placeholder="Enter your name"><br>
+    <input type="email" name="email" placeholder="Enter your Email" class="form-input" required> <br>
+    <textarea name="message" placeholder="Your Message" class="form-input" required></textarea>
+    <button class="submit-button" type="submit">Submit</button>
+    </form>
+
+</section>
+<!-- footer section -->
+
+    <footer class="footer-section">
+        <div class="section-content">
+            <p class="copyright-text">&#169; 2024 Coffee Shop. All rights reserved.</p>
+           <div class="social">
+            <a href="https://www.facebook.com/profile.php?id=1000xxxxxxxx"><i class='bx bxl-facebook'></i></a>
+             <a href="https://www.youtube.com/@ChhotiKahani111"><i class='bx bxl-youtube'></i></a>
+              <a href=""><i class='bx bxl-instagram'></i></a>
+               <a href="https://www.linkedin.com/in/aashika-chaudhary-69018b343?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class='bx bxl-linkedin'></i></a>
+           </div> 
+           <p class="policy-text">
+            <a href="#" class="policy-link">Privacy Policy</a> | <a href="#"  class="policy-link">Terms of Service</a>
+           </p>
+        </div> 
+        <div class="footer-box">
+            <ul class="contact-info-list">
+                <li class="contact-info">
+               <p><i class="bx bxs-map"></i>250 New york City,USA 10001</p>
+                </li>
+                 <li class="contact-info">
+                <p><i class="bx bxs-envelope"></i>coffee@shop.com</p>
+                </li>
+                 <li class="contact-info">
+               <p><i class="bx bxs-phone"></i>
+               +977- 9809876345</p>
+                </li>
+                 <li class="contact-info">
+                <p><i class="bx bxs-time"></i>Mon-Sat: 7:00 AM - 10:00 PM</p>
+                </li>
+                 <li class="contact-info">
+                <p><i class="bx bxs-time"></i> Sunday:Closed</p>
+                </li>
+                 <li class="contact-info">
+                <p><i class='bx bxs-globe'></i>www.coffeeshop.com</p>
+                </li>
+            </ul>
+
+            <h3> Contact</h3>
+            <div class="contact">
+                <span><i class='bx  bxs-map'></i> 250 New york City,USA 10001</span>
+                  <span><i class='bx  bxs-phone'></i>+1 444 744 8444 </span>
+                  <span><i class='bx  bxs-envelope'></i>coffee@shop.com</span>
+            </div>
+        </div>
+    </footer>
+    <!-- Linking swiper script -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+<script src="coff.js"></script>
+
+
+</body>
+</html>
