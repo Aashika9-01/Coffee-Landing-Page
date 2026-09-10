@@ -51,6 +51,7 @@ form.addEventListener("submit", function(e){
 
   fetch(form.action, {
     method: "POST",
+    mode:"no-cors:,
     body: new FormData(form)
   })
   .then(response => response.text())
