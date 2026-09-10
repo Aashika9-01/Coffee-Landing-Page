@@ -25,28 +25,57 @@ function OrderNow(){
 }
 //submit form
 const form = document.getElementById('contact-form');
-form.addEventListener('submit', function(e){
-  e.preventDefault();//page reload hunna
+const form = document.getElementById('contact-form');
 
-  fetch(form.action, {
-    method: 'POST',
-    body: new FormData(form),
-    headers: { 'Accept': 'application/json' }
-  }).then(response => {
-    if (response.ok) {
- alert("Thank you! Your message was sent.");
-      form.reset();//form clear garne
-    }else{
-      alert('Oops! There was a problem. Please try again.');
-    }
-  })
-  .catch(error => 
-    {
-      console.error(error);
-      alert('Oops! There was a problem. Please try again.');
+if (form) {
+
+    form.addEventListener('submit', function (e) {
+
+        e.preventDefault();
+
+        const submitButton = form.querySelector('button[type="submit"]');
+
+        // Disable button while submitting
+        if (submitButton) {
+            submitButton.disabled = true;
+            submitButton.innerText = "Sending...";
+        }
+
+        fetch(form.action, {
+            method: 'POST',
+            mode: 'no-cors',
+            body: new FormData(form)
+        })
+        .then(() => {
+
+            // Since no-cors is used, we cannot read Google's response.
+            // If fetch completes, show success message.
+
+            alert("Thank you! Your message was sent successfully.");
+
+            form.reset();
+
+            if (submitButton) {
+                submitButton.disabled = false;
+                submitButton.innerText = "Send Message";
+            }
+
+        })
+        .catch((error) => {
+
+            console.error("Form submission error:", error);
+
+            alert("Oops! There was a problem. Please try again.");
+
+            if (submitButton) {
+                submitButton.disabled = false;
+                submitButton.innerText = "Send Message";
+            }
+        });
+
     });
-});
 
+}
 //learn more
 function toggleLearn(event) {
     event.preventDefault();
