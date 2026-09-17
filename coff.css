@@ -151,26 +151,7 @@ h1{
 .home-text p{
     margin-bottom: 20px;
 }
-/* Container for the buttons */
-.home-buttons {
-  display: flex;
-  gap: 20px;          
-  justify-content: flex-start;
-  margin-top: 30px;  
-  text-align: left; 
-  flex-wrap: wrap;    
-}
 
-/* Common styles for both buttons */
-.home-buttons button {
-  padding: 2px 28px;
-  font-size: 1rem;
-  border-radius: 8px;
-  border: none;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  font-weight: 600;
-}
 .btn-order-now {
     display: inline-block;
     text-decoration: none;
@@ -188,31 +169,25 @@ h1{
     background: #a87943;
     transform: translateY(-2px);
 }
-/* Order Now button style */
-.home-buttons .btn-order-now {
-  background-color:var(--main-color) ;/* coral/orange color */
-  color: #fff;
+.btn-contact-us {
+    display: inline-block;
+    text-decoration: none;
+    background: #c49a63;
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
 }
 
-.home-buttons .btn-order-now:hover {
-  background-color:var(--main-color) ;/* darker orange on hover */
-  transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+.btn-contact-us:hover {
+    background: #a87943;
+    transform: translateY(-2px);
 }
 
-/* Contact Us button style */
-.home-buttons .btn-contact-us {
-  background-color: #fff;
-  color: var(--text-color);
-  border: 2px solid var(--main-color);
-}
-
-.home-buttons .btn-contact-us:hover {
-  background-color: var(--main-color);
-  color: #fff;
-  transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-}
 
 /* Responsive for small screens */
 @media screen and (max-width: 600px){
