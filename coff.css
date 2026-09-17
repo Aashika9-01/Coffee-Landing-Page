@@ -171,7 +171,23 @@ h1{
   transition: all 0.3s ease;
   font-weight: 600;
 }
+.btn-order-now {
+    display: inline-block;
+    text-decoration: none;
+    background: #c49a63;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
 
+.btn-order-now:hover {
+    background: #a87943;
+    transform: translateY(-2px);
+}
 /* Order Now button style */
 .home-buttons .btn-order-now {
   background-color:var(--main-color) ;/* coral/orange color */
